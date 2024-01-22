@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt Nowell</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Matthew Nowell</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>   
+    <nav id="hamburger-nav">
+        <div class="logo">Matthew Nowell</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav> 
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Matthew Nowell profile pic"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello World, I am</p>
+            <h1 class="title">Matthew Nowell</h1>
+            <p class="section__text__p2">Full Stack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"onclick="window.open('./assets/CO-MattNowellResume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1"onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" 
+                alt="My LinkedIn profile"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/matthewnowell/'"
+                /> 
+                <img src="./assets/youtube-icon.png" 
+                alt="My YouTube channel"
+                class="icon" 
+                onclick="location.href='https://www.youtube.com/MattNowell'"
+                />
+                <img src="./assets/github.png" 
+                alt="My Github profile"
+                class="icon" 
+                onclick="location.href='https://github.com/MatthewNowell/'"
+                />
+               
+            </div>
+        </div>
+    </section>
+    <section id="about"> 
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.jpg" 
+                alt="Matt in Geneva"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./assets/location.png" 
+                        alt="location icon"
+                        class="icon"/>
+                        <h3>Based In</h3>
+                        <p>Denver, CO</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/experience.png" 
+                        alt="experience icon"
+                        class="icon"/>
+                        <h3>Experience</h3>
+                        <p>1+ Years <br /> Full Stack Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/education.png" 
+                        alt="education icon"
+                        class="icon"/>
+                        <h3>Education</h3>
+                        <p>Vocational Degree<br /> High School Diploma</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                    Hello World! I am Matthew Nowell. Professionally, I am a multi-language / framework / 
+                    platform developer working <b>remotely</b> for a <b>Philadelphia Top 100 Growing company</b> based 
+                    in Conshohocken, PA. I transformed from a landscaper to a Full Stack Developer after taking a chance
+                    and enrolling in a software engineering bootcamp. To my surprise, it worked! I am a driven, self-motivated, eager-to-learn, 
+                    optimistic employee currently doing the best I can! On a personal level, I am an animal-lover, an 
+                    avid backpacker and hiker, and a traveler! The picture you see on your left is from my most recent solo Europe backpacking
+                    trip I took in December of 2023!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" 
+        onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Full Stack Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>C#</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>HTML | CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Vue.JS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>React.JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Database & Business Tools</h2>
+                <div class="article-container">
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>SQL</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Salesforce</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Git</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Postman</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Microsoft Suites</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Jira</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" 
+        onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/vending-machine.png" alt="Vending Machine" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Vending Machine</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MatthewNowell/Vending-Machine-App'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/pizza-restaurant.png" alt="Pizza Restaurant" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Pizza Restaurant App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MatthewNowell/Pizza-Company-Website'">
+                            Github 
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/portfolio-resume.png" alt="Portfolio Resume" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">THIS Resume Website!</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.youtube.com/watch?v=j8Jo-ZJdJWY'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:examplemail@gmail.com">matthewnowell97@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/matthewnowell/">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/youtube-icon.png" alt="chess icon" class="icon contact-icon" />
+                <p><a href="https://www.youtube.com/c/MattNowell">YouTube</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Matthew Nowell. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
